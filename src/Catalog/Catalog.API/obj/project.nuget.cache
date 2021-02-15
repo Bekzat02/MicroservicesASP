@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "65pkojtVmAQDw1w5fcR5FWhgXYh5KkqyN9psSZFO59qD7aaOhr4GN5rbjddcF/Skbv0O7Uiim5I5xW6xnOtgLQ==",
+  "dgSpecHash": "v1BivgiAxpdtj68KJovunanZOj/pDTsExZVN7ovPdvinPsdkzVHhd670MKeb66g++Ig535mEAw1N9k8tawqRCg==",
   "success": true,
   "projectFilePath": "C:\\Users\\samja\\source\\repos\\Microservices2\\src\\Catalog\\Catalog.API\\Catalog.API.csproj",
   "expectedPackageFiles": [

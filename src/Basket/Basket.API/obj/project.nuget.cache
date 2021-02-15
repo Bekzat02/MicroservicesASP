@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "OKxJw4LClGiPSpH6T/7OrXcqHj8WT+Xv39hxBHola3zJs8IPxeAAA3JnQmew+1K2yoTT96RImgaTYkc1g1i7JA==",
+  "dgSpecHash": "DXYuTQ0Do3mu6JgFLiXMuWgR5USq+792agwJH9igBydUgA/1X3rZClJR6ydHUtkvIQex6S8IfDcwqKzZOfScMA==",
   "success": true,
   "projectFilePath": "C:\\Users\\samja\\source\\repos\\Microservices2\\src\\Basket\\Basket.API\\Basket.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\samja\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\samja\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\samja\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\samja\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\samja\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
@@ -21,6 +23,7 @@
     "C:\\Users\\samja\\.nuget\\packages\\system.diagnostics.performancecounter\\5.0.0\\system.diagnostics.performancecounter.5.0.0.nupkg.sha512",
     "C:\\Users\\samja\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
     "C:\\Users\\samja\\.nuget\\packages\\system.io.pipelines\\5.0.0\\system.io.pipelines.5.0.0.nupkg.sha512",
+    "C:\\Users\\samja\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\samja\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
     "C:\\Users\\samja\\.nuget\\packages\\system.security.cryptography.protecteddata\\5.0.0\\system.security.cryptography.protecteddata.5.0.0.nupkg.sha512",
     "C:\\Users\\samja\\.nuget\\packages\\system.security.permissions\\5.0.0\\system.security.permissions.5.0.0.nupkg.sha512",

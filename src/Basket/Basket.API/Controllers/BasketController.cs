@@ -1,24 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using System.Threading.Tasks;
+using AutoMapper;
 using Basket.API.Entities;
-using Microsoft.AspNetCore.Http;
+using Basket.API.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using RedisSE2Project.Repositories.Interfaces;
 
 namespace Basket.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BasketItemController : ControllerBase
+    public class BasketController : ControllerBase
     {
         private readonly IBasketRepository _repository;
+        private readonly ILogger<BasketController> _logger;
+        private readonly IMapper _mapper;
+        private readonly EventBusRabbitMQProducer
 
-        public BasketItemController(IBasketRepository repository)
+        public BasketController(IBasketRepository repository, ILogger<BasketController> logger, IMapper mapper)
         {
             _repository = repository;
+            _logger = logger;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -42,6 +46,20 @@ namespace Basket.API.Controllers
         public async Task<ActionResult> DeleteBasket(string name)
         {
             return Ok(await _repository.DeleteBasket(name));
+        }
+
+        [Route("[action]")]
+        [HttpPost]
+        [ProducesResponseType(typeof(void), (int)HttpStatusCode.Created)]
+        [ProducesResponseType(typeof(void), (int)HttpStatusCode.BadRequest)]
+        public async Task<IActionResult> Checkout([FromBody] BasketCheckout basketCheckout)
+        {
+            var basket = await _repository.GetBasket(basketCheckout.Username);
+            if (basket == null)
+            {
+                
+            }
+            return await Accepted();
         }
     }
 }
